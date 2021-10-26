@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интереси</title>
+<style>
+    body{
+        height: 100%;
+        margin: 0;
+        background-color: rgb(233, 218, 197);
+        font-family: "Garamond", serif;
+        background-image: url("background.jpg");
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: rgb(78, 65, 46);
+      }
+      
+      .topnav a {
+        float: right;
+        color: rgb(233, 218, 197);
+        text-align: center;
+        padding: 16px 20px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      
+      .topnav a:hover {
+        background-color: rgb(97, 56, 17);
+        color: rgb(233, 218, 197);
+      }
+      
+      .topnav a.active {
+        background-color: none;
+        color: rgb(22, 13, 4);
+      }
+
+      .column {
+         float: left;
+         width: 32%;
+         margin-top: 250px;
+         margin-left: 5px;
+         margin-right: 5px;
+         padding: 0;
+         border-style: solid;
+         border-radius: 15%;
+         border-color: rgb(97, 56, 17);
+         background-color: seashell;
+         height: 100%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        margin-top: 100px;
+        height: 100%;
+    }
+
+    @media screen and (max-width:600px) {
+        .column {
+        width: 100%;
+    }
+}
+      </style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Дома</a>
+        <a href=".\interests.html">Интереси</a>
+        <a href="#gallery">Галерија</a>
+        <a href="#blog">Блог</a>
+        <a href="#ask">Прашај</a>
+      </div>
+
+      <div class='row'>
+          <div class="column">
+              <h3 style="text-align: center;">Музика</h3>
+              <ul>
+                <li>песни..</li>
+                <li>албуми..</li>
+                <li>изведувачи..</li>
+              </ul>
+          </div>
+
+          <div class="column">
+            <h3 style="text-align: center;">Филм</h3>
+            <ul>
+                <li>The Hobbit Trilogy</li>
+                <li>Lord Of The Rings Trilogy</li>
+                <li>Marvel movies....</li>
+              </ul>
+        </div>
+
+        <div class="column">
+            <h3 style="text-align: center;">Разно</h3>
+            <ul>
+                <li>Спорт</li>
+                <li>Цртање</li>
+                <li>Храна</li>
+              </ul>
+        </div>
+      </div>
+</body>
+</html>
