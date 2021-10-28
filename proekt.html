@@ -5,95 +5,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emilija Chona</title>
-
-    <style>
-        body {
-          margin: 0;
-          font-family: "Garamond", serif;
-          background-color: rgb(233, 218, 197);
-          background-image: url("background.jpg");
-        }
-        
-        .topnav {
-          overflow: hidden;
-          background-color: rgb(78, 65, 46);
-        }
-        
-        .topnav a {
-          float: right;
-          color: rgb(233, 218, 197);
-          text-align: center;
-          padding: 16px 20px;
-          text-decoration: none;
-          font-size: 20px;
-        }
-        
-        .topnav a:hover {
-          background-color: rgb(97, 56, 17);
-          color: rgb(233, 218, 197);
-        }
-        
-        .topnav a.active {
-          background-color: none;
-          color: rgb(22, 13, 4);
-        }
-
-    .column {
-         float: left;
-         width: 45%;
-         padding: 25px;
-    }
-
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    @media screen and (max-width:600px) {
-        .column {
-        width: 100%;
-    }
-}
-
-    .box{
-        padding-top: 250px;
-    }
-
-    footer{
-    padding: 3px;
-    background-color: rgba(224, 172, 138, 0);
-    color: rgb(39, 27, 10);
-    text-align: right;
-    }
-        </style>
+    <link href="./proekt_css.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
 
-    <div class="topnav">
-        <a class="active" href=".\proekt.html">Дома</a>
-        <a href=".\interests.html">Интереси</a>
-        <a href=".\gallery.html">Галерија</a>
-        <a href="#blog">Блог</a>
-        <a href="#ask">Прашај</a>
+  <div class="topnav">
+    <nav>
+      <ul id="navbar">
+        <li><a href="#home">Дома</a></li>
+        <li><a href="#interests">Интереси</a></li>
+        <li><a href="#gallery">Галерија</a></li>
+        <li><a href="#blog">Блог</a></li>
+        <li><a href="#ask">Прашај</a></li>
+        <li><a href="#contact">Контакт</a></li>
+      </ul>
+    </nav>
       </div>
       
-      <div class="row">
-        <div class="column">
-          <p style="padding-top:100px; padding-left: 150px;"><img src="20211026_183151.jpg" alt="image" width="350" height="350" style="border-radius: 100%;"></p>
-        </div>
-        
-        <div class="column">
-            <div class="box"><p style="font-size: x-large;">Здраво, јас сум <strong>Емилија Чона</strong> :)<br>
-                Добредојдовте на мојата страна.</p>
+      <main>
+        <section class="prva" id="home">
+            <div class="column">
+              <p style="padding-top:100px; padding-left: 150px;"><img src="20211026_183151.jpg" alt="image" width="350" height="350" style="border-radius: 100%;"></p>
             </div>
-        </div>
-      </div>
+            
+            <div class="column">
+                <div class="box"><p style="font-size: x-large;">Здраво, јас сум <strong>Емилија Чона</strong> :)<br>
+                    Добредојдовте на мојата страна.</p>
+                </div>
+            </div>
+        </section>
 
-      <footer>
+        <section class="vtora" id="interests">
+          <div class="middle">
+            <h3>Филмови и серии</h3>
+            <p>Ова се некои од филмовите кои би ги гледала безброј пати:</p>
+            <ul>
+              <li>Lord Of The Rings (trilogy)</li>
+              <li>The Hobbit (trilogy)</li>
+              <li>Thor-Ragnarok...всушност повеќето филмови од Marvel</li>
+              <li>Midnight in Paris</li>
+              <li>The Gentleman</li>
+              <li>Shutter Island</li>
+              <li>Princess Mononoke</li>
+              <li>many other...</li>
+            </ul>
+            <p>Серии кои би ги препорачала:</p>
+            <ul>
+              <li>The Office</li>
+              <li>Rick and Morty</li>
+              <li>South Park</li>
+              <li>Power</li>
+              <li>Dark</li>
+            </ul>
+          </div>
+
+          <div class="middle">
+            <h3>Музика</h3>
+            линк<br>
+            линк<br>
+            линк<br>
+            линк<br>
+            линк<br>
+          </div>
+
+          <div class="middle">
+            <h3>Разно</h3>
+            <p>Моето омилено хоби е трчање, и спорт воглавно. Трчам рекреативно, 
+              но и редовно учествувам во градски трки сакајќи да ја постигнам
+              мојата цел да истрчам маратон. Воедно ја користам секоја прилика да
+              бидам активна, тренирам crossfit, скијам и планинарам.<br>
+              Отсекогаш ме привлекувала физиката и вслената, поточно астрофизика,
+              па често се наоѓам себеси гледајќи видеа и читајќи објави за оваа
+              област. Еден од омилените канали на youtube за таков тип на видеа
+              ми е <a href="https://www.youtube.com/c/inanutshell">kurzgesagt.</a><br>
+              blaslflahhfq
+            </p>
+          </div>
+
+        </section>
+
+        <section class="treta" id="gallery">
+          <h2>Галерија</h2>
+
+          <div class="slika">
+            <a target="_blank" href="gallery.jfif">
+              <img src="gallery.jfif" alt="img" width="300" height="100">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+          
+          <div class="slika">
+            <a target="_blank" href="gallery.jfif">
+              <img src="gallery.jfif" alt="img" width="300" height="100">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+          
+          <div class="slika">
+            <a target="_blank" href="gallery.jfif">
+              <img src="gallery.jfif" alt="img" width="300" height="100">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+          
+          <div class="slika">
+            <a target="_blank" href="gallery.jfif">
+              <img src="gallery.jfif" alt="img" width="300" height="100">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </section>
+
+        <section class="cetvrta" id="blog">
+          <h1 style="font-size: 40px; color: rgb(233, 217, 188);">Travel Blog</h1>
+        </section>
+
+        <section class="petta" id="ask">
+          <h1 style="text-align: center;">Тука оставете ги вашите прашања и мислења :)</h1>
+          <div class="prashalnik">
+          <form>
+            <label for="fname">Име:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Презиме:</label><br>
+            <input type="text" id="lname" name="lname">
+          </form>
+
+          
+        <form action="/action_page.php">
+          <label for="q">Напишете тука:</label><br>
+          <input type="text" id="q" name="q" style="padding: 10px;"><br><br>
+          <input type="submit" value="Испрати">
+        </form> 
+
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact">
         <address>Контакт:  e-mail - <a href="mailto:emmachona01@gmail.com">emmachona01@gmail.com</a> 
-            instagram - <a href="https://www.instagram.com/chonaemilija/">chonaemilija</a></address></p>
+            instagram <a href="https://www.instagram.com/chonaemilija/"> 
+              <img src="insta.png" alt="chonaemilija" width="20px" height="20px"></a>
+            github <a href="https://github.com/emachona"><img src="gitt.png" alt="github/emachona" width="20px" height="20px"></a> </address></p> 
       </footer>
 </body>
 </html>
