@@ -30,8 +30,12 @@
             </div>
             
             <div class="column">
-                <div class="box"><p style="font-size: x-large;">Здраво, јас сум <strong>Емилија Чона</strong> :)<br>
-                    Добредојдовте на мојата страна.</p>
+                <div class="box">
+                  <p id="zdravo" style="font-size:xx-large;"></p>
+                  <p style="font-size: x-large;">Јас сум <strong>Емилија Чона</strong> :)<br>
+                    Имам 20 години и студирам на ФЕИТ во Скопје.<br>
+                    На странава можеш да прочиташ повеќе за мене, моите интереси и искуства, па и да го споделиш твојот впечаток.
+                  </p>
                 </div>
             </div>
         </section>
@@ -62,11 +66,32 @@
 
           <div class="middle">
             <h3>Музика</h3>
-            линк<br>
-            линк<br>
-            линк<br>
-            линк<br>
-            линк<br>
+            <div class="pesna">
+              <p>Alt-J</p>
+              <p><a href="https://open.spotify.com/artist/3XHO7cRUPCLOr6jwp8vsx5?si=v70LXtVQSYmayuGVtN90-g">
+                <img src="listens.png" alt="listen" width="150" height="50"></a>  
+            </div>
+
+            <div class="pesna">
+              <p>Tool</p>
+              <p><a href="https://open.spotify.com/artist/2yEwvVSSSUkcLeSTNyHKh8?si=rr3DrW9sRc64EOCctGrL7g">
+                <img src="listens.png" alt="listen" width="150" height="50"></a></p>  
+              </a>
+            </div>
+
+            <div class="pesna">
+              <p>Dominic Fike</p>
+              <p><a href="https://open.spotify.com/artist/2yEwvVSSSUkcLeSTNyHKh8?si=rr3DrW9sRc64EOCctGrL7g">
+                <img src="listens.png" alt="listen" width="150" height="50"></a></p>  
+              </a>
+            </div>
+            
+            <div class="pesna">
+              <p>Skepta</p>
+              <p><a href="https://open.spotify.com/artist/2p1fiYHYiXz9qi0JJyxBzN?si=tIQ9sXUpRn2v8QkVxDU57w">
+                <img src="listens.png" alt="listen" width="150" height="50"></a></p>  
+              </a>
+            </div>
           </div>
 
           <div class="middle">
@@ -86,59 +111,99 @@
         </section>
 
         <section class="treta" id="gallery">
+          <script src="proekt_js.js"></script>
           <h2>Галерија</h2>
 
           <div class="slika">
             <a target="_blank" href="gallery.jfif">
-              <img src="gallery.jfif" alt="img" width="300" height="100">
+              <img src="Ari.jpg" alt="img" width="300" height="100">
             </a>
-            <div class="desc">Add a description of the image here</div>
+            <div class="comments" id="comment">
+              <form id="forma">
+                <textarea id="words" rows="1" cols="19">Коментирај</textarea>
+                <input type="button" onclick="getwords()" value="Испрати" /> <br>
+                <p id="para"></p>
+              </form>
+            </div>
           </div>
           
           <div class="slika">
             <a target="_blank" href="gallery.jfif">
               <img src="gallery.jfif" alt="img" width="300" height="100">
             </a>
-            <div class="desc">Add a description of the image here</div>
+            <div class="comments" id="comment">
+              <form id="forma">
+                <textarea id="words" rows="1" cols="19">Коментирај</textarea>
+                <input type="button" onclick="getwords2()" value="Испрати" /> <br>
+                <p id="para2"></p>
+              </form>
+            </div>
           </div>
           
           <div class="slika">
             <a target="_blank" href="gallery.jfif">
               <img src="gallery.jfif" alt="img" width="300" height="100">
             </a>
-            <div class="desc">Add a description of the image here</div>
+            <div class="comments" id="comment">
+              <form id="forma">
+                <textarea id="words" rows="1" cols="19">Коментирај</textarea>
+                <input type="button" onclick="getwords3()" value="Испрати" /> <br>
+                <p id="para3"></p>
+              </form>
+            </div>
           </div>
           
           <div class="slika">
             <a target="_blank" href="gallery.jfif">
               <img src="gallery.jfif" alt="img" width="300" height="100">
             </a>
-            <div class="desc">Add a description of the image here</div>
+            <div class="comments" id="comment">
+              <form id="forma">
+                <textarea id="words" rows="1" cols="19">Коментирај</textarea>
+                <input type="button" onclick="getwords4()" value="Испрати" /> <br>
+                <p id="para4"></p>
+              </form>
+            </div>
+          </div>
+          
+          <!--<div class="arrows prev"></div>
+          <div class="arrows next"></div>
+          -->
         </section>
 
         <section class="cetvrta" id="blog">
           <h1 style="font-size: 40px; color: rgb(233, 217, 188);">Travel Blog</h1>
+          <div class="post1">
+            <h3>10 дена во Словенија</h3>
+            <p>Не можам да замислам подобар начин да ги искористам последните денови од моето слободно
+              време пред да започнам во трета година од тоа да ги поминам во посета на мојата другарка
+              која студира во Љубљана. Кога најдовме поволни авионски карти преку Виена, моите другарки
+              и јас не се двоумевме веднаш да резервираме и да почнеме да го планираме нашето патување....
+            </p>
+          </div>
+
+          <div class="post2">
+            <h3>Лето во Будва</h3>
+            <p>Не можам да замислам подобар начин да ги искористам последните денови од моето слободно
+              време пред да започнам во трета година од тоа да ги поминам во посета на мојата другарка
+              која студира во Љубљана. Кога најдовме поволни авионски карти преку Виена, моите другарки
+              и јас не се двоумевме веднаш да резервираме и да почнеме да го планираме нашето патување....
+            </p>
+          </div>
+
         </section>
 
         <section class="petta" id="ask">
-          <h1 style="text-align: center;">Тука оставете ги вашите прашања и мислења :)</h1>
+          <h1 style="text-align: center;">Тука оставете ги вашите прашања или мислења :)</h1>
           <div class="prashalnik">
-          <form>
-            <label for="fname">Име:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Презиме:</label><br>
-            <input type="text" id="lname" name="lname">
+          <form id="mislenje">
+            <textarea id="comment" rows="5" cols="60" style="align-self: center;">Твојот коментар:</textarea>
+            <input type="button" onclick="getcomment()" value="Испрати" /> <br>
+            <p id="komentar"></p>
           </form>
-
-          
-        <form action="/action_page.php">
-          <label for="q">Напишете тука:</label><br>
-          <input type="text" id="q" name="q" style="padding: 10px;"><br><br>
-          <input type="submit" value="Испрати">
-        </form> 
-
           </div>
         </section>
+
       </main>
 
       <footer id="contact">
