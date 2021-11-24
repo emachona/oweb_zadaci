@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emilija Chona</title>
     <link href="./proekt_css.css" rel="stylesheet" type="text/css">
+  </head>
 
-</head>
 <body>
-
-  <div class="topnav">
-    <nav>
-      <ul id="navbar">
+  <section class="menu">
+   <!--<button onclick="toggleText()">menu</button>
+    <img class="navlogo" src="logotest2.png" alt="logo" style="width: 50px; height: 20px;">-->
+    <nav>  
+      <ul class="navbar">
         <li><a href="#home">Дома</a></li>
         <li><a href="#interests">Интереси</a></li>
         <li><a href="#gallery">Галерија</a></li>
-        <li><a href="#blog">Блог</a></li>
+        <li><a href="#" onclick="myFunction()" class="dropdown">Блог</a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#blog">Travel Blog</a>
+              <a href="#">Интересен ден</a>
+              <a href="#">Новости</a>
+            </div>
+        </li>
         <li><a href="#ask">Прашај</a></li>
-        <li><a href="#contact">Контакт</a></li>
       </ul>
     </nav>
-      </div>
-      
+    <a class="contact" href="#contact"><button>Контакт</button></a>
+  </section>
+
       <main>
         <section class="prva" id="home">
             <div class="column">
@@ -104,68 +111,68 @@
               па често се наоѓам себеси гледајќи видеа и читајќи објави за оваа
               област. Еден од омилените канали на youtube за таков тип на видеа
               ми е <a href="https://www.youtube.com/c/inanutshell">kurzgesagt.</a><br>
-              blaslflahhfq
+              ..........
             </p>
           </div>
 
         </section>
 
         <section class="treta" id="gallery">
-          <script src="proekt_js.js"></script>
           <h2>Галерија</h2>
-
+          
+         <!-- <marquee behavior="slide" direction="left">-->
           <div class="slika">
             <a target="_blank" href="gallery.jfif">
               <img src="Ari.jpg" alt="img" width="300" height="100">
             </a>
             <div class="comments" id="comment">
               <form id="forma">
-                <textarea id="words" rows="1" cols="19">Коментирај</textarea>
-                <input type="button" onclick="getwords()" value="Испрати" /> <br>
-                <p id="para"></p>
+                <textarea class="words" id="words" rows="1" cols="19">Коментирај</textarea>
+                <button type="button" onclick="getwords()">Испрати</button> <br>
+                <p id="para"><hr></p>
               </form>
             </div>
           </div>
           
           <div class="slika">
             <a target="_blank" href="gallery.jfif">
-              <img src="gallery.jfif" alt="img" width="300" height="100">
+              <img src="slovenija.jpg" alt="img" width="300" height="100">
             </a>
             <div class="comments" id="comment">
               <form id="forma">
-                <textarea id="words" rows="1" cols="19">Коментирај</textarea>
-                <input type="button" onclick="getwords2()" value="Испрати" /> <br>
-                <p id="para2"></p>
+                <textarea class="words" id="words2" rows="1" cols="19">Коментирај</textarea>
+                <button type="button" onclick="getwords2()">Испрати</button> <br>
+                <p id="para2"><hr></p>
               </form>
             </div>
           </div>
           
           <div class="slika">
             <a target="_blank" href="gallery.jfif">
-              <img src="gallery.jfif" alt="img" width="300" height="100">
+              <img src="ducks.jpg" alt="img" width="300" height="100">
             </a>
             <div class="comments" id="comment">
               <form id="forma">
-                <textarea id="words" rows="1" cols="19">Коментирај</textarea>
-                <input type="button" onclick="getwords3()" value="Испрати" /> <br>
-                <p id="para3"></p>
+                <textarea class="words" id="words3" rows="1" cols="19">Коментирај</textarea>
+                <button type="button" onclick="getwords3()">Испрати</button><br>
+                <p id="para3"><hr></p>
               </form>
             </div>
           </div>
           
           <div class="slika">
             <a target="_blank" href="gallery.jfif">
-              <img src="gallery.jfif" alt="img" width="300" height="100">
+              <img src="hercegnovi.JPG" alt="img" width="300" height="100">
             </a>
             <div class="comments" id="comment">
               <form id="forma">
-                <textarea id="words" rows="1" cols="19">Коментирај</textarea>
-                <input type="button" onclick="getwords4()" value="Испрати" /> <br>
-                <p id="para4"></p>
+                <textarea class="words" id="words4" rows="1" cols="19">Коментирај</textarea>
+                <button type="button" onclick="getwords4()">Испрати</button><br>
+                <p id="para4"><hr></p>
               </form>
             </div>
           </div>
-          
+        <!--</marquee>-->
           <!--<div class="arrows prev"></div>
           <div class="arrows next"></div>
           -->
@@ -173,6 +180,12 @@
 
         <section class="cetvrta" id="blog">
           <h1 style="font-size: 40px; color: rgb(233, 217, 188);">Travel Blog</h1>
+          
+          <div class="add">
+            <p>
+            <img scr="plus.png" alt="Додади твој" width="50" height="50"></p>
+          </div>
+
           <div class="post1">
             <h3>10 дена во Словенија</h3>
             <p>Не можам да замислам подобар начин да ги искористам последните денови од моето слободно
@@ -197,8 +210,8 @@
           <h1 style="text-align: center;">Тука оставете ги вашите прашања или мислења :)</h1>
           <div class="prashalnik">
           <form id="mislenje">
-            <textarea id="comment" rows="5" cols="60" style="align-self: center;">Твојот коментар:</textarea>
-            <input type="button" onclick="getcomment()" value="Испрати" /> <br>
+            <textarea id="komentarprashaj" rows="5" cols="60" style="align-self: center;"></textarea>
+            <button type="button" onclick="getcomment()">Испрати</button> <br>
             <p id="komentar"></p>
           </form>
           </div>
@@ -207,10 +220,12 @@
       </main>
 
       <footer id="contact">
-        <address>Контакт:  e-mail - <a href="mailto:emmachona01@gmail.com">emmachona01@gmail.com</a> 
+        <address id="contact">Контакт:  e-mail - <a href="mailto:emmachona01@gmail.com">emmachona01@gmail.com</a> 
             instagram <a href="https://www.instagram.com/chonaemilija/"> 
               <img src="insta.png" alt="chonaemilija" width="20px" height="20px"></a>
             github <a href="https://github.com/emachona"><img src="gitt.png" alt="github/emachona" width="20px" height="20px"></a> </address></p> 
       </footer>
+      
+      <script src="proekt_js.js"></script>
 </body>
 </html>
