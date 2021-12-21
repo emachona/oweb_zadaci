@@ -6,60 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emilija Chona</title>
     <link href="./proekt_css.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
 <body>
   <section class="menu">
-   <!--<button onclick="toggleText()">menu</button>
-    <img class="navlogo" src="logotest2.png" alt="logo" style="width: 50px; height: 20px;">-->
     <nav>  
       <ul class="navbar">
         <li><a href="#home">Дома</a></li>
         <li><a href="#interests">Интереси</a></li>
         <li><a href="#gallery">Галерија</a></li>
-        <li><a href="#" onclick="myFunction()" class="dropdown">Блог</a>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#blog">Travel Blog</a>
-              <a href="#">Интересен ден</a>
-              <a href="#">Новости</a>
-            </div>
-        </li>
+        <li><a href="#blog">Блог</a></li>
         <li><a href="#ask">Прашај</a></li>
       </ul>
     </nav>
-    <a class="contact" href="#contact"><button>Контакт</button></a>
+    <a class="contactbtn" href="#contact"><button>Контакт</button></a>
   </section>
 
       <main>
-        <section class="prva" id="home">
-            <div class="column">
-              <p style="padding-top:100px; padding-left: 150px;"><img src="20211026_183151.jpg" alt="image" width="350" height="350" style="border-radius: 100%;"></p>
+        <section class="prva" id="home">        
+            <div class="card">
+              <img src="profilna.jpg" alt="Emma" style="width:100%">
+              <h1>Емилија Чона</h1>
+              <p class="title">Студентка</p>
+              <p>ФЕИТ-ТКИИ</p>
             </div>
-            
             <div class="column">
-                <div class="box">
-                  <p id="zdravo" style="font-size:xx-large;"></p>
-                  <p style="font-size: x-large;">Јас сум <strong>Емилија Чона</strong> :)<br>
-                    Имам 20 години и студирам на ФЕИТ во Скопје.<br>
-                    На странава можеш да прочиташ повеќе за мене, моите интереси и искуства, па и да го споделиш твојот впечаток.
-                  </p>
+                <div class="box" style="text-align: justify;">
+                  <p id="zdravo" style="font-size:x-large;"></p>
+                  <p style="font-size: x-large;">Јас сум <strong>Емилија Чона</strong> :)</p>
+                   <p style="font-size: large;"> Имам 20 години и студирам на ФЕИТ во Скопје.<br> На странава
+                    можеш да прочиташ повеќе за мене,<br> моите интереси и искуства,
+                    па и да го споделиш твојот впечаток.</p>
                 </div>
             </div>
         </section>
 
         <section class="vtora" id="interests">
           <div class="middle">
-            <h3>Филмови и серии</h3>
+            <h3 style="text-align: center;">Филмови и серии</h3>
+            <br>
             <p>Ова се некои од филмовите кои би ги гледала безброј пати:</p>
             <ul>
               <li>Lord Of The Rings (trilogy)</li>
               <li>The Hobbit (trilogy)</li>
-              <li>Thor-Ragnarok...всушност повеќето филмови од Marvel</li>
+              <li>Thor-Ragnarok</li>
               <li>Midnight in Paris</li>
               <li>The Gentleman</li>
               <li>Shutter Island</li>
               <li>Princess Mononoke</li>
-              <li>many other...</li>
+              <li>Spiderman Into The Spiderverse</li>
+              <li>Листата продолжува...</li>
             </ul>
             <p>Серии кои би ги препорачала:</p>
             <ul>
@@ -72,62 +71,52 @@
           </div>
 
           <div class="middle">
-            <h3>Музика</h3>
+            <h3 style="text-align:center;">Музика</h3>
             <div class="pesna">
-              <p>Alt-J</p>
-              <p><a href="https://open.spotify.com/artist/3XHO7cRUPCLOr6jwp8vsx5?si=v70LXtVQSYmayuGVtN90-g">
-                <img src="listens.png" alt="listen" width="150" height="50"></a>  
+              <p><iframe src="https://open.spotify.com/embed/track/7DdXf9x75iEVCHWfoRwRuR?utm_source=generator" height="80" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></p> 
             </div>
 
             <div class="pesna">
-              <p>Tool</p>
-              <p><a href="https://open.spotify.com/artist/2yEwvVSSSUkcLeSTNyHKh8?si=rr3DrW9sRc64EOCctGrL7g">
-                <img src="listens.png" alt="listen" width="150" height="50"></a></p>  
+              <p><iframe src="https://open.spotify.com/embed/track/0nLOl4fSiBZKGFla5pLUtf?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></p>  
               </a>
             </div>
 
             <div class="pesna">
-              <p>Dominic Fike</p>
-              <p><a href="https://open.spotify.com/artist/2yEwvVSSSUkcLeSTNyHKh8?si=rr3DrW9sRc64EOCctGrL7g">
-                <img src="listens.png" alt="listen" width="150" height="50"></a></p>  
+              <p><iframe src="https://open.spotify.com/embed/track/1xLs8Mu1QEVbGCpyHQ2r2U?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></p>  
               </a>
             </div>
             
             <div class="pesna">
-              <p>Skepta</p>
-              <p><a href="https://open.spotify.com/artist/2p1fiYHYiXz9qi0JJyxBzN?si=tIQ9sXUpRn2v8QkVxDU57w">
-                <img src="listens.png" alt="listen" width="150" height="50"></a></p>  
+              <p><iframe src="https://open.spotify.com/embed/album/22zpCX6Nb9ppOVklalvGec?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></p>  
               </a>
             </div>
           </div>
 
           <div class="middle">
-            <h3>Разно</h3>
-            <p>Моето омилено хоби е трчање, и спорт воглавно. Трчам рекреативно, 
+            <h3 style="text-align: center;">Разно</h3>
+            <p style="text-align:justify;">Моето омилено хоби е трчање, или какво било спортување воглавно. Трчам рекреативно, 
               но и редовно учествувам во градски трки сакајќи да ја постигнам
-              мојата цел да истрчам маратон. Воедно ја користам секоја прилика да
+              мојата цел да истрчам маратон. Дел сум од женската екипа за трчање на ФЕИТ, со која 
+              досега два пати имаме освоено прво место на Скопскиот штафетен маратон. Воедно ја користам секоја прилика да
               бидам активна, тренирам crossfit, скијам и планинарам.<br>
               Отсекогаш ме привлекувала физиката и вслената, поточно астрофизика,
-              па често се наоѓам себеси гледајќи видеа и читајќи објави за оваа
+              па често се наоѓам себеси гледајќи видеа и читајќи објави од оваа
               област. Еден од омилените канали на youtube за таков тип на видеа
-              ми е <a href="https://www.youtube.com/c/inanutshell">kurzgesagt.</a><br>
-              ..........
+              ми е <a style="text-decoration: none;" href="https://www.youtube.com/c/inanutshell">kurzgesagt.</a><br>
+              Обожавам да одам на кино, на кафе или било каде со друштво. Секогаш сум расположена за дружење. :)
             </p>
           </div>
 
         </section>
 
         <section class="treta" id="gallery">
-          <h2>Галерија</h2>
-          
-         <!-- <marquee behavior="slide" direction="left">-->
+          <!-- <h2>Галерија</h2> -->
           <div class="slika">
-            <a target="_blank" href="gallery.jfif">
-              <img src="Ari.jpg" alt="img" width="300" height="100">
-            </a>
+              <img id="picture1" src="ari.jpg" alt="img" width="300" height="100">
             <div class="comments" id="comment">
+              <i onclick="myFunction(this)" class="like"></i>
               <form id="forma">
-                <textarea class="words" id="words" rows="1" cols="19">Коментирај</textarea>
+                <textarea class="words" id="words" rows="2" cols="19">Коментирај</textarea>
                 <button type="button" onclick="getwords()">Испрати</button> <br>
                 <p id="para"><hr></p>
               </form>
@@ -135,12 +124,10 @@
           </div>
           
           <div class="slika">
-            <a target="_blank" href="gallery.jfif">
-              <img src="slovenija.jpg" alt="img" width="300" height="100">
-            </a>
+              <img id="picture2" src="slovenija.jpg" alt="img" width="300" height="100">
             <div class="comments" id="comment">
               <form id="forma">
-                <textarea class="words" id="words2" rows="1" cols="19">Коментирај</textarea>
+                <textarea class="words" id="words2" rows="2" cols="19">Коментирај</textarea>
                 <button type="button" onclick="getwords2()">Испрати</button> <br>
                 <p id="para2"><hr></p>
               </form>
@@ -148,12 +135,10 @@
           </div>
           
           <div class="slika">
-            <a target="_blank" href="gallery.jfif">
-              <img src="ducks.jpg" alt="img" width="300" height="100">
-            </a>
+              <img id="picture3" src="ducks.jpg" alt="img" width="300" height="100">
             <div class="comments" id="comment">
               <form id="forma">
-                <textarea class="words" id="words3" rows="1" cols="19">Коментирај</textarea>
+                <textarea class="words" id="words3" rows="2" cols="19">Коментирај</textarea>
                 <button type="button" onclick="getwords3()">Испрати</button><br>
                 <p id="para3"><hr></p>
               </form>
@@ -161,29 +146,71 @@
           </div>
           
           <div class="slika">
-            <a target="_blank" href="gallery.jfif">
-              <img src="hercegnovi.JPG" alt="img" width="300" height="100">
-            </a>
+              <img id="picture4" src="hercegnovi.JPG" alt="img" width="300" height="100">
             <div class="comments" id="comment">
               <form id="forma">
-                <textarea class="words" id="words4" rows="1" cols="19">Коментирај</textarea>
+                <textarea class="words" id="words4" rows="2" cols="19">Коментирај</textarea>
                 <button type="button" onclick="getwords4()">Испрати</button><br>
                 <p id="para4"><hr></p>
               </form>
             </div>
           </div>
-        <!--</marquee>-->
-          <!--<div class="arrows prev"></div>
-          <div class="arrows next"></div>
-          -->
+
+          <div id="clickMe"><img id="scroll" src="arrow.PNG" alt="img" width="100" height="100" style="margin-top: 250px;"></div>
+
+          <script>
+            $(document).ready(function() {
+               $("#clickMe").click(function() {
+
+               var src1 = $('#picture1').attr('src');
+               var src2= $('#picture2').attr('src');
+               var src3=$('#picture3').attr('src');
+               var src4=$('#picture4').attr('src');
+              if(src1 == 'ari.jpg') {
+               $("#picture1").attr("src","tivat.jpg");
+               } else if(src1 == "tivat.jpg") {
+                 $("#picture1").attr("src","ari.jpg");
+              }
+              if(src2 == 'slovenija.jpg') {
+               $("#picture2").attr("src","arabebe.jpg");
+               } else if(src2 == "arabebe.jpg") {
+                 $("#picture2").attr("src","slovenija.jpg");
+              }
+              if(src3 == 'ducks.jpg') {
+               $("#picture3").attr("src","pelister.jpg");
+               } else if(src3 == "pelister.jpg") {
+                 $("#picture3").attr("src","ducks.jpg");
+              }
+              if(src4 == 'hercegnovi.JPG') {
+               $("#picture4").attr("src","ara.jpg");
+               } else if(src4 == "ara.jpg") {
+                 $("#picture4").attr("src","hercegnovi.JPG");
+              }
+
+            });
+        });
+            </script>
         </section>
 
         <section class="cetvrta" id="blog">
-          <h1 style="font-size: 40px; color: rgb(233, 217, 188);">Travel Blog</h1>
-          
           <div class="add">
-            <p>
-            <img scr="plus.png" alt="Додади твој" width="50" height="50"></p>
+           <h1 style="text-align: center; color: rgb(233, 218, 197);">Блог</h1><br><br><br><br><br><br><br>
+            <h3 style="color:rgb(233, 218, 197);">Напиши блог, сподели искуство или приказна..</h2>
+              <form>
+                  <p>
+                      <input class="txt" type="text" id="myTitle" placeholder="Наслов">
+                  </p>
+  
+                  <textarea id="myText" rows="5" cols="50" placeholder="Напиши нешто"></textarea>
+              </form>
+              <p style="text-align: center;"><button type="button" onclick="post()">Ажурирај</button>
+              <button type="button" onclick="on()">Види го она што го напиша!</button></p>
+          
+          <div id="overlay" onclick="off()">
+            <script>
+              document.getElementById("overlay").innerHTML = getSavedValuePost("overlay");
+          </script>
+          </div>
           </div>
 
           <div class="post1">
@@ -207,24 +234,27 @@
         </section>
 
         <section class="petta" id="ask">
-          <h1 style="text-align: center;">Тука оставете ги вашите прашања или мислења :)</h1>
           <div class="prashalnik">
+          <h1 style="align-self: center;">Тука оставете ги вашите прашања или мислења :)</h1>
           <form id="mislenje">
-            <textarea id="komentarprashaj" rows="5" cols="60" style="align-self: center;"></textarea>
+            <textarea id="komentarprashaj" rows="5" cols="60" style="align-self: center;"></textarea><br>
             <button type="button" onclick="getcomment()">Испрати</button> <br>
             <p id="komentar"></p>
           </form>
           </div>
+
+          <div class="contact" id="contact">
+            <h1 style="align-self: center;">Поврзи се со мене на:</h1>
+           <br>
+            <a href="https://www.instagram.com/chonaemilija/"><img class="contactimg" src="instaContact.PNG" alt="chonaemilija" width="100px" height="100px"></a>
+            <a href="https://github.com/emachona"><img class="contactimg" src="githubContact.PNG" alt="github/emachona" width="100px" height="100px"></a><br>
+            <a href="https://open.spotify.com/user/5t7n34adjozoxxkrs83acjcz4?si=eef4c46387a84b40"><img class="contactimg" src="spotifyContacttt.PNG" alt="chonaspotify" width="100px" height="100px"></a>
+            <a href="https://www.facebook.com/emilija.chona/"><img class="contactimg" src="facebookContact.PNG" alt="emilija.chona" width="100px" height="100px"></a><br>
+          <a href="mailto:emmachona01@gmail.com"><img class="contactimg" src="gmailContact.PNG" alt="emmachona01" width="100px" height="100px"></a>
+        </div>
         </section>
 
       </main>
-
-      <footer id="contact">
-        <address id="contact">Контакт:  e-mail - <a href="mailto:emmachona01@gmail.com">emmachona01@gmail.com</a> 
-            instagram <a href="https://www.instagram.com/chonaemilija/"> 
-              <img src="insta.png" alt="chonaemilija" width="20px" height="20px"></a>
-            github <a href="https://github.com/emachona"><img src="gitt.png" alt="github/emachona" width="20px" height="20px"></a> </address></p> 
-      </footer>
       
       <script src="proekt_js.js"></script>
 </body>

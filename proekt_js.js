@@ -2,41 +2,18 @@ var date=new Date();
 var hour=date.getHours();
 var minutes=date.getMinutes();
 var godina=date.getUTCFullYear();
-var mesec=date.getUTCMonth();
-var den=date.getDay();
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var mesec = months[date.getMonth()];
+var den = days[date.getDay()];
 
 var username;
 username = window.prompt("Hi there! \n Внеси го твоето име:");
-
+if(username==null){
+ username="Anonymous";
+}
 document.getElementById("zdravo").innerHTML="Добредојде на мојата страна, " + username + "!";
-
-/*function toggleText(){
-    var x = document.getElementById("menu");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }*/
   
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropdown')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-
   const nav=document.querySelector(".menu");
   let lastScrollY=window.scrollY;
 
@@ -49,6 +26,10 @@ document.getElementById("zdravo").innerHTML="Добредојде на моја�
     }
     lastScrollY=window.scrollY;
   });
+
+  function myFunction(x) {
+    x.classList.toggle("dislike");
+  }
 
 function getwords() {
     var text=document.getElementById("words").value;
@@ -74,10 +55,41 @@ function getwords4() {
     document.getElementById("words4").value = "Коментирај";
 }
 
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
+function getSavedValuePost(v) {
+  if (!localStorage.getItem(v)) {
+      localStorage.setItem(v, "");
+      return "";
+  }
+  return localStorage.getItem(v);
+}
+
+var pamti; 
+function post(){
+  var title = document.getElementById("myTitle").value;
+  var text = document.getElementById("myText").value;
+  var sodrzhina = '<div class="card"><h2>' + title + '</h2><h5>By ' + username + ',<br>' 
+  +den+ ", "+date.getDate() +" "+mesec+" "+godina+" "+hour+":"+minutes + 
+  '</h5> <p class="blog-txt">' + text + '</p></div>'
+  pamti = getSavedValuePost("overlay");
+  document.getElementById("overlay").innerHTML = sodrzhina+pamti;
+
+            pamti=sodrzhina+pamti;
+            localStorage.setItem("overlay", pamti);
+}
+
 function getcomment() {
     var comm = document.getElementById("komentarprashaj").value;
     document.getElementById("komentar").innerHTML += "<div>"+ "<strong>"+username+"</strong>"+" : " + comm +
-     "<br>"+ den+"-"+mesec+"-"+godina+" "+hour+":"+minutes +"<hr></div>";
+     "<br>"+ den+ ", "+date.getDate() +" "+mesec+" "+godina+" "+hour+":"+minutes +"<hr></div>";
     document.getElementById("komentarprashaj").value = "";
+    // localStorage.clear();
 }
 
